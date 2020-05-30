@@ -15,7 +15,7 @@ public final class DefaultReader implements Reader {
         try {
             final PdfReader reader = new PdfReader(fileName);
 
-            for (int i = 0; i < reader.getNumberOfPages(); i++)
+            for (int i = 1; i < reader.getNumberOfPages(); i++)
                 builder.append(PdfTextExtractor.getTextFromPage(reader, i));
 
         } catch (IOException e) {
