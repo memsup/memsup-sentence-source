@@ -14,7 +14,7 @@ public enum Database {
                 .username("docker")
                 .password("mykenai1363")
                 .driverClassName("org.postgresql.Driver")
-                .jdbcUrl("jdbc:postgresql://localhost:5432?docker?characterEncoding=utf8")
+                .jdbcUrl("jdbc:postgresql://localhost:5432/docker?characterEncoding=utf8")
                 .build();
 
         HikariJdbcDataSource hikariJdbcDataSource = new HikariJdbcDataSource();

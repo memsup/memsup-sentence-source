@@ -18,10 +18,8 @@ public class Main {
         portableFiles.forEach(e -> {
             final String source = reader.getSource(e);
             final Set<String> sentences = parser.parse(source);
-            sentences.forEach(System.out::println);
             sentence.save(sentences);
         });
-
 
     }
 }
