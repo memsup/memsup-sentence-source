@@ -12,6 +12,8 @@ public final class DefaultReader implements Reader {
 
         final StringBuilder builder = new StringBuilder();
 
+        System.out.println("fileName = " + fileName);
+
         try {
             final PdfReader reader = new PdfReader(fileName);
 
